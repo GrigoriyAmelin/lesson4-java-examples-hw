@@ -2,22 +2,16 @@ package guru.qa;
 
 public class FirstJavaExample {
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
         byte aByte = -128;
         short aShort = 32767;
-        int a = 100;
-        int b = 200;
+        int a = 100, b = 200, c = a + b, d = a - b, g = 0;
         char aChar = 1;
         float aFloat = 0.123f;
         double aDouble = 0.123;
-
-        int c = a + b;
-        int d = a - b;
         double e = a * aDouble;
         double f = a * aFloat;
-        int g = 0;
-
 
         System.out.println("\n" + "Тестовые данные: " + "\n");
         System.out.println("a = " + a + "; b = " + b + "; aByte = " + aByte + "; aShort = " + aShort + ";");
@@ -37,9 +31,9 @@ public class FirstJavaExample {
         System.out.println("c > (a + b) >> " + (c > (a + b)));
         System.out.println("e < f >> " + (e < f));
         System.out.println("e >= f >> " + (e >= f));
-        System.out.println("(e < f) && (d <= c) >> " + ((e < f)&&(d <= c)));
-        System.out.println("(e < f) || (d >= c) >> " + ((e < f)||(d >= c)));
-        System.out.println("! ((e < f) || (d <= c)) >> " + (!(e < f)||(d >= c)) + "\n");
+        System.out.println("(e < f) && (d <= c) >> " + ((e < f) && (d <= c)));
+        System.out.println("(e < f) || (d >= c) >> " + ((e < f) || (d >= c)));
+        System.out.println("! ((e < f) || (d <= c)) >> " + (!(e < f) || (d >= c)) + "\n");
         System.out.println("a++ = " + a++);
         System.out.println("a = " + a);
         System.out.println("(a *= a) = " + (a *= a));
