@@ -16,6 +16,7 @@ public class FirstJavaExample {
         int d = a - b;
         double e = a * aDouble;
         double f = a * aFloat;
+        int g = 0;
 
 
         System.out.println("\n" + "Тестовые данные: " + "\n");
@@ -31,8 +32,19 @@ public class FirstJavaExample {
         System.out.println("(c * e) / 5450 = " + ((c * e) / 5450 + "\n"));
         System.out.println("(c * f) = " + c * f);
         System.out.println("(c * f) / 5450 = " + ((c * f) / 5450));
-        System.out.println("(c * f) % 5 = " + ((c * f) % 3690));
-        System.out.println(a++); // будет выведен результат до подсчета инкремента, а потом посчитан инкремент и сохранен
-        System.out.println(++a);
+        System.out.println("(c * f) % 5 = " + ((c * f) % 3690) + "\n");
+
+        System.out.println("c > (a + b) >> " + (c > (a + b)));
+        System.out.println("e < f >> " + (e < f));
+        System.out.println("e >= f >> " + (e >= f));
+        System.out.println("(e < f) && (d <= c) >> " + ((e < f)&&(d <= c)));
+        System.out.println("(e < f) || (d >= c) >> " + ((e < f)||(d >= c)));
+        System.out.println("! ((e < f) || (d <= c)) >> " + (!(e < f)||(d >= c)) + "\n");
+        System.out.println("a++ = " + a++);
+        System.out.println("a = " + a);
+        System.out.println("(a *= a) = " + (a *= a));
+        System.out.println("(a += a) = " + (g += a));
+
+        System.out.println("Переполнение: aShort * 2 = " + (aShort * 2));
     }
 }
